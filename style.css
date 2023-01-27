@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+:root {
+    --inter-font-family--: 'Inter', sans-serif;
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-fold {
+    width: 100%;
+    height: 880px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    position: absolute;
+}
+
+.left-part {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.left-part-header {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-part-header ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-family: var(--inter-font-family--);
+    font-weight: 700;
+    font-size: 21px;
+    color: rgba(255, 0, 0, 1);
+    text-transform: uppercase;
+}
+
+.left-part-header ul li:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.left-part-header ul li:focus {
+    color: rgba(9, 9, 9, 1);
+}
+
+.left-part-main-section {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-part-main-section-text {
+    width: 60%;
+    height: auto;
+    padding-left: 40px;
+}
+
+.left-part-main-section-text h1 {
+    font-size: 55px;
+    font-family: var(--inter-font-family--);
+    color: rgba(70, 68, 68, 1);
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.left-part-main-section-text p {
+    font-size: 19px;
+    font-family: var(--inter-font-family--);
+    color: rgba(190, 190, 190, 1);
+    padding-bottom: 50px;
+}
+
+.left-part-main-section-text button {
+    width: 204px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 3, 3, 1);
+    font-size: 20px;
+    font-family: var(--inter-font-family--);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.left-part-main-section-text button:hover {
+    opacity: 0.6;
+}
+
+.hamburger-img {
+    position: relative;
+    padding-left: 32%;
+    top: 150px;
+}
+
+.hamburger-img img {
+    width: 500px;
+    height: 500px;
+
+}
+
+.right-part {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 1);
+    position: relative;
+}
+
+.right-part-header {
+    height: 120px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+    margin: 0 80px;
+}
+
+.right-part-header p {
+    font-size: 26px;
+    font-family: var(--inter-font-family--);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.shopping-logo {
+    background-image: url(/assests/Rectangle\ 2.png);
+    width: 61px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-logo:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.right-part-main-section {
+    display: flex;
+    padding-top: 250px;
+}
+
+.right-part-main-section-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+
+.right-part-main-section-text h2 {
+    font-size: 35px;
+    color: rgba(250, 255, 0, 1);
+    font-family: var(--inter-font-family--);
+    text-transform: capitalize;
+    margin-left: 225px;
+}
+
+.right-part-main-section-text p {
+    font-size: 20px;
+    font-family: var(--inter-font-family--);
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-burger h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 200px;
+    font-family: var(--inter-font-family--);
+    transform: rotate(270deg);
+    /* opacity: 15%; */
+}
+
+.text-burger {
+    margin-top: 300px;
+    width: 10%;
+}
+
+
+/* ------------------------------menu-section------------------------------ */
+
+.menu-section {
+    width: 100%;
+    height: auto;
+    background-color: #E5E5E5;
+}
+
+
+
+.menu-text h5 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 38px;
+    color: rgba(255, 0, 0, 1);
+}
