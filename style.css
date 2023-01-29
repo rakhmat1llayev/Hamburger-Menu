@@ -16,7 +16,6 @@ body {
     height: 880px;
     background-color: rgba(255, 255, 255, 1);
     display: flex;
-    position: absolute;
 }
 
 .left-part {
@@ -101,15 +100,33 @@ body {
 }
 
 .hamburger-img {
-    position: relative;
-    padding-left: 32%;
-    top: 150px;
+    position: absolute;
+    padding-left: 33%;
+    bottom: 100px;
 }
 
 .hamburger-img img {
     width: 500px;
     height: 500px;
 
+}
+
+.hamburger-price {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-price h1 {
+    font-size: 50px;
+    color: rgba(255, 0, 0, 1);
+    font-family: var(--inter-font-family--);
 }
 
 .right-part {
@@ -167,7 +184,7 @@ body {
     color: rgba(250, 255, 0, 1);
     font-family: var(--inter-font-family--);
     text-transform: capitalize;
-    margin-left: 225px;
+    margin-left: 220px;
 }
 
 .right-part-main-section-text p {
@@ -178,7 +195,7 @@ body {
 
 .text-burger h1 {
     color: rgba(255, 255, 255, 1);
-    font-size: 200px;
+    font-size: 180px;
     font-family: var(--inter-font-family--);
     transform: rotate(270deg);
     /* opacity: 15%; */
@@ -189,6 +206,11 @@ body {
     width: 10%;
 }
 
+.right-part-main-section-text-wrapper {
+    width: 230px;
+    margin-left: 220px;
+}
+
 
 /* ------------------------------menu-section------------------------------ */
 
@@ -196,12 +218,246 @@ body {
     width: 100%;
     height: auto;
     background-color: #E5E5E5;
+    padding-top: 80px;
 }
 
-
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .menu-text h5 {
     font-family: 'Indie Flower', cursive;
     font-size: 38px;
     color: rgba(255, 0, 0, 1);
+    text-transform: capitalize;
+}
+
+.menu-text h1 {
+    font-size: 80px;
+    font-family: var(--inter-font-family--);
+    color: rgba(70, 68, 68, 1);
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-left: 80px;
+    padding-top: 50px;
+}
+
+.menu-wrapper {
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 13px, 13px, 30px, 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 35px;
+}
+
+.menu-wrapper:nth-child(3) {
+    margin-right: 90px;
+}
+
+.menu-wrapper h1 {
+    color: rgba(255, 0, 0, 1);
+    font-size: 40px;
+    font-weight: 800;
+    font-family: var(--inter-font-family--);
+    margin-bottom: 25px;
+}
+
+.menu-wrapper p {
+    color: rgba(152, 152, 152, 1);
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.menu-shopping-logo {
+    background-image: url(/assests/Rectangle\ 2\ \(1\).png);
+    width: 61px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-shopping-logo :hover {
+    opacity: 0.6;
+}
+
+.shopping-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.shopping-button button {
+    border: 2px solid rgba(255, 0, 0, 1);
+    width: 184px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 0, 0, 1);
+    font-family: var(--inter-font-family--);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.shopping-button button:hover {
+    opacity: 0.6;
+}
+
+.menu_text {
+    color: rgba(0, 0, 0, 1);
+    font-family: var(--inter-font-family--);
+    font-size: 150px;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 970px;
+    top: 1550px;
+    opacity: 5%;
+}
+
+.second-menu {
+    display: flex;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.first-block {
+    width: 33.3%;
+    position: relative;
+}
+
+.second-block {
+    width: 33.3%;
+    position: relative;
+}
+
+.third-block {
+    width: 33.3%;
+    position: relative;
+}
+
+.first-block img {
+    width: 100%;
+}
+
+.second-block img {
+    width: 100%;
+}
+
+.third-block img {
+    width: 100%;
+}
+
+.first-block-text {
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+}
+
+.second-block-text {
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+}
+
+.third-block-text {
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+}
+
+.second-menu h1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: var(--inter-font-family--);
+    font-size: 40px;
+}
+
+.second-menu button {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 1);
+    font-family: var(--inter-font-family--);
+    text-transform: uppercase;
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.second-menu button:hover {
+    opacity: 0.6;
+}
+
+
+/* --------------------------advertisement section-------------------------- */
+
+.advertisement-section {
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.advertisement-text{
+    width: 70%;
+    padding-left: 220px;
+}
+
+.advertisement-text h1 {
+    color: rgba(70, 68, 68, 1);
+    font-family: var(--inter-font-family--);
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.advertisement-text p {
+    color: rgba(169, 165, 165, 1);
+    font-family: var(--inter-font-family--);
+    font-size: 30px;
+    text-align: center;
+}
+
+.social-text{
+    transform: rotate(270deg);
+    color: rgba(0, 0, 0, 1);
+    font-family: var(--inter-font-family--);
+    font-size: 150px;
+    opacity: 5%;
+    margin-bottom: 100px;
+}
+
+.advertisement-photo{
+    display: flex;
+    gap: 50px;
+    padding-right: 70px;
+    padding-top: 50px;
+}
+
+.advertisement-photo img{
+    width: 310px;
+    height: 310px;
 }
